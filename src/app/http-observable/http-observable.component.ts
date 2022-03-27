@@ -11,7 +11,7 @@ export class HttpObservableComponent implements OnInit {
   constructor(private service : GetService) { }
 data=[];
   ngOnInit() {
-debugger
+
     this.service.getData().subscribe(res=>{
      console.log(res);
     });

@@ -1,0 +1,7 @@
+[  
+  {"id" : 1001, "name" : "abc", "marks" : 90},  
+  {"id" : 1002, "name" : "bcd", "marks" : 80},  
+  {"id" : 1003, "name" : "cde", "marks" : 70},  
+  {"id" : 1004, "name" : "def", "marks" : 85},  
+  {"id" : 1005, "name" : "efg", "marks" : 60}  
+]  

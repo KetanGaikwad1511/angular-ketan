@@ -1,17 +1,15 @@
-import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
-import { ClassInterface } from "./class-interface";
-
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ClassInterface } from './class-interface';
 
 @Injectable()
-export class GetService{
+export class GetService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http:HttpClient){}
+  private url = './assets/file.json';
 
-  private url='./assets/file.json'
-
-  getData():Observable<any[]>{
-        return this.http.get<any[]>(this.url);
+  getData(): Observable<any[]> {
+    return this.http.get<any[]>(this.url);
   }
 }

@@ -7,10 +7,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NgOnChangeLifeCycleComponent implements OnInit {
   constructor() {}
+  howManyTimesLifeCycleHookCalled: any = 0;
+  ngOnInitCalled: any = 0;
+  @Input() data: any;
 
-  @Input() data:any;
+  ngOnChanges() {
+   '
+    this.howManyTimesLifeCycleHookCalled++;
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+    this.ngOnInitCalled++;
+  }
 
   //this is child componnet that recieves data from the parent component and
   //will get fired in ngOnChange Hook life cycle..
@@ -20,5 +29,4 @@ export class NgOnChangeLifeCycleComponent implements OnInit {
   // and same reference will bind in the html selector of the child component
   // and that selector will be called in the parent component
   // this will share data between parant to child component...
-
 }

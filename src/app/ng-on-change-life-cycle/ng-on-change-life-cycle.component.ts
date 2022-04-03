@@ -12,8 +12,8 @@ export class NgOnChangeLifeCycleComponent implements OnInit {
   @Input() data: any;
 
   ngOnChanges() {
-   '
-    this.howManyTimesLifeCycleHookCalled++;
+   
+    this.howManyTimesLifeCycleHookCalled++
   }
 
   ngOnInit() {

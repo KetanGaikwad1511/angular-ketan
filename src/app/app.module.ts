@@ -10,10 +10,11 @@ import { GetService } from './http-observable/get.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { PromiseComponent } from './promise/promise.component';
+import { NgOnChangeLifeCycleComponent } from './ng-on-change-life-cycle/ng-on-change-life-cycle.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent,ObserverComponent,HttpObservableComponent ,PromiseComponent],
+  declarations: [ AppComponent, HelloComponent,ObserverComponent,HttpObservableComponent ,PromiseComponent,NgOnChangeLifeCycleComponent],
   bootstrap:    [ AppComponent ],
   providers:[GetService]
 })

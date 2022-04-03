@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
   observer.complete();
 });
 
+dataForChild:any=10012;
+
   ngOnInit(): void {
    
 

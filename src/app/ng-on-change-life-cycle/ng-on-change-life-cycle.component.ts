@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ng-on-change-life-cycle',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgOnChangeLifeCycleComponent implements OnInit {
   constructor() {}
+
+  @Input() data:any;
 
   ngOnInit() {}
 
@@ -18,4 +20,5 @@ export class NgOnChangeLifeCycleComponent implements OnInit {
   // and same reference will bind in the html selector of the child component
   // and that selector will be called in the parent component
   // this will share data between parant to child component...
+
 }
